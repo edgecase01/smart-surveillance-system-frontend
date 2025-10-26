@@ -20,7 +20,7 @@ const PoliceDashboard = ({ stationId }) => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const s = io("http://localhost:3000"); // your backend URL
+    const s = io("https://smart-surveillance-system-backend-japk.onrender.com"); // your backend URL
     setSocket(s);
 
     s.on("connect", () => {
